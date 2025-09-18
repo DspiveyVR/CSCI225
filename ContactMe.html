@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Me</title>
+        <meta charset="UTF-8">
+</head>
+
+<body>
+    <h1>I really like sound design so this video (kind of) describes me</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1Db9rGbth_o?si=yk31Wu8Xw1slMGJc"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <h1>Feedback</h1>
+    <form id="feedback" name="feedback">
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="anonymous" required><br><br>
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="anonymous" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="803-000-0000" required><br><br>
+
+        <label for="mail">Email Address:</label><br>
+        <input type="email" id="mail" name="mail" placeholder="name@domain.com"><br><br>
+
+        <p>Would you recommend this website?</p>
+        <input type="radio" id="yes" name="recommendation" value="yes" required>
+        <label for="yes">Yes</label><br>
+        <input type="radio" id="no" name="recommendation" value="no" required>
+        <label for="no">No</label><br><br>
+
+        <label for="website">Favorite Website:</label><br>
+        <select id="website" name="website">
+            <option value="" disabled selected>Select a website...</option>
+            <option value="Google">Google</option>
+            <option value="Facebook">Facebook</option>
+            <option value="Reddit">Reddit (Wrong choice)</option>
+            <option value="Twitter">Twitter (Even more wrong choice)</option>
+            <option value="Time">Time</option>
+        </select><br><br>
+
+        <label for="rating">Rate this website (1-10):</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" value="5">
+        <output for="rating" id="rating-out">5</output><br><br>
+        <script>
+            const rating = document.querySelector('#rating');
+            const rating_out = document.querySelector('#rating-out');
+
+            rating_out.textContent = rating.value;
+            rating.addEventListener("input", event => {
+                rating_out.textContent = event.target.value;
+            });
+        </script>
+
+        <label for="comment">Additional Comments:</label><br>
+        <textarea id="comment" name="comment" rows="4"></textarea><br><br>
+
+        <label for="checkbox">Something really really important</label>
+        <input type="checkbox" id="checkbox" name="checkbox">
+
+        <label for="myColorPicker">Choose a background color:</label>
+        <input type="color" id="myColorPicker" name="myColorPicker" value="#ff0000">
+
+        <script>
+            const picker = document.querySelector('#myColorPicker');
+            const form = document.querySelector('#feedback');
+
+            picker.addEventListener("input", event => {
+                form.style.backgroundColor = event.target.value;
+            });
+        </script>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+
+
+</body>
+
+</html>
