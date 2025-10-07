@@ -1,0 +1,208 @@
+@font-face {
+  font-family: 'youwouldntdownloadacar';
+  src: url('../fonts/SpecialElite-Regular.ttf');
+}
+
+:root {
+  --dark-purple: #760dc6;
+  --header-contrast: 5;
+  --header-hue-rotate: -90deg;
+}
+
+body {
+  background-position: 55% 55%;
+  background-image: url(../img/frontierer.jpg);
+  background-attachment: fixed;
+}
+
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2pt;
+  color: var(--dark-purple);
+  /* text-shadow: 4px 4px 5px #646464; */
+  border: 20px solid transparent;
+  background-color: #fff;
+  background-image: url("../img/huhhh.jpg");
+  background-position: 50% 65%;
+  border-image: url("../img/wort.jpg") 20 9 73 60 / 10px 10px;
+  padding-right: 7vw;
+  text-shadow:
+    1px 1px 0px #fff,
+    -1px -1px 0px #fff,
+    1px -1px 0px #fff,
+    -1px 1px 0px #fff;
+}
+
+p {
+  font-family: 'youwouldntdownloadacar', sans-serif;
+  line-height: 2vh;
+  text-align: left;
+}
+
+p::first-letter {
+  color: var(--dark-purple);
+}
+
+footer {
+  position: fixed;
+  top: 98vh;
+  background-color: var(--dark-purple);
+}
+
+div.introduction,
+div.portfolio,
+div.assignments,
+div.contact-info {
+  position: absolute;
+  top: 20vh;
+  width: 25vw;
+  left: 35vw;
+  background-color: white;
+  display: none;
+}
+
+div.schedule {
+  position: absolute;
+  top: 20vh;
+  width: 47vw;
+  left: 25vw;
+  display: none;
+  background-color: white;
+}
+
+div.portfolio,
+div.schedule,
+div.contact-info {
+  border-right: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+}
+
+div.contact-info {
+  padding: 30px;
+}
+
+h1.introduction {
+  position: fixed;
+  top: 15vh;
+  width: 15vw;
+  left: 0vw;
+}
+
+h1.portfolio {
+  position: fixed;
+  top: 50vh;
+  width: 15vw;
+  left: 0vw;
+}
+
+div.portfolio li:first-child p {
+  box-shadow: 5px 5px 10px #000000;
+}
+
+h1.schedule {
+  position: fixed;
+  top: 15vh;
+  width: 15vw;
+  left: 75vw;
+}
+
+h1.contact-info {
+  position: fixed;
+  top: 50vh;
+  width: 15vw;
+  left: 75vw;
+}
+
+h1.assignments {
+  position: fixed;
+  top: 75vh;
+  width: 15vw;
+  left: 75vw;
+}
+
+h1:hover+div {
+  display: initial;
+}
+
+div.navbar {
+  position: fixed;
+  left: 15vw;
+  background-color: #646464;
+}
+
+div.navbar ul {
+  margin: 0;
+  padding-left: 0;
+  /* list-style-image: url(../img/happy.png); */
+  list-style-type: none;
+}
+
+div.navbar li {
+  color: rgb(1, 200, 200);
+  font-weight: bolder;
+  float: left;
+  padding-right: 40px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+}
+
+div.navbar li::before {
+  content: "";
+  background-image: url(../img/happy.png);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+
+  margin-right: 8px;
+  padding-left: 8px;
+  padding-bottom: 4px;
+
+  vertical-align: middle;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(96, 166, 142);
+}
+
+a:hover {
+  letter-spacing: 2pt;
+}
+
+table tr:nth-child(even)  {
+  background-color: rgb(179, 164, 182);
+}
+
+table {
+  empty-cells: show;
+  vertical-align: middle;
+  padding: 0px;
+  border: 10px solid rgb(97, 0, 133);
+}
+
+h1 {
+  transition: all 0.2s ease-in-out;
+}
+
+h1.introduction:hover,
+h1.portfolio:hover {
+  transform: translateX(10px);
+  filter: contrast(var(--header-contrast)) hue-rotate(var(--header-hue-rotate));
+}
+
+h1.assignments:hover,
+h1.contact-info:hover, 
+h1.schedule:hover {
+  transform: translateX(-10px);
+  filter: contrast(var(--header-contrast)) hue-rotate(var(--header-hue-rotate));
+} 
