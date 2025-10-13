@@ -1,1 +1,6 @@
 @import url('../node_modules/bootstrap/scss/_containers.scss');
+
+#emailtxt {
+    position: absolute;
+    top: 6vh;
+}
