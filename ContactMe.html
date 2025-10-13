@@ -6,10 +6,35 @@
     <meta charset="UTF-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style type="text/css">
+        .container-xxl {
+            background-color: rgb(159, 207, 191);
+            padding: 20px;
+        }
+        .col {
+            border: 10px inset rgb(154, 154, 154);
+        }
+        .navbar {
+            background-color: aliceblue;
+            color: white;
+        }
+        iframe {
+            margin-left: 10px;
+            border: 10px solid aliceblue;
+            box-shadow: 4px 4px 10px honeydew; 
+        }
+        .col h1 {
+            background-color: white;
+            border: 5px outset black;
+        }
+        .btn {
+            background-color: rgb(100, 135, 192);
+        }
+    </style>
 </head>
 
 <body>
-    <div class="container-md">
+    <div class="container-xxl">
         <div class="row">
             <div class="col">
                 <div class="navbar navbar-expand-lg">
@@ -31,7 +56,6 @@
 
         <div class="row">
             <div class="col">
-
                 <h1>I really like sound design so this video (kind of) describes me</h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/1Db9rGbth_o?si=yk31Wu8Xw1slMGJc"
                     title="YouTube video player" frameborder="0"
@@ -63,6 +87,7 @@
                     <div class="form-floating">
                         <input type="email" class="form-control" id="mail" name="mail" placeholder="name@domain.com"><br><br>
                         <label for="mail">Email Address:</label><br>
+                        <small class="form-text text-muted"> Your email …..</small> 
                     </div>
 
                     <p>Would you recommend this website?</p>
@@ -95,7 +120,7 @@
                     </script>
 
                     <label for="comment">Additional Comments:</label><br>
-                    <textarea id="comment" name="comment" rows="4"></textarea><br><br>
+                    <textarea class="form-control" id="comment" name="comment" rows="4"></textarea><br><br>
 
                     <label for="checkbox">Something really really important</label>
                     <input class="form-control" type="checkbox" id="checkbox" name="checkbox">
@@ -112,7 +137,10 @@
                         });
                     </script>
 
-                    <button type="submit">Submit Feedback</button>
+                    <div>
+                        <input type="submit" name="submit" class="btn btn-primary" title="Submit" />
+                        <input type="reset" name="reset" class="btn btn-primary" />
+                    </div>
                 </form>
             </div>
         </div>
