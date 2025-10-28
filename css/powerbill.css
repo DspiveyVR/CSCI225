@@ -1,0 +1,28 @@
+div.details {
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+div > div > div > p {
+    padding-left: 10px;
+}
+
+div.details > div > div:nth-of-type(2n),
+input {
+    /* justify-content: flex-end; */
+    position: absolute;
+    left: 80vw;
+}
+
+div.details > div {
+    display: flex;
+    border-top: 2px solid black;
+}
+
+div.details > div:last-child {
+    border-bottom: 2px solid black;
+}
+
+div.details > div:nth-of-type(2n) {
+    background-color: lightgrey;
+}

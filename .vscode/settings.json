@@ -1,0 +1,16 @@
+    {
+    // 1. Set ESLint as the default formatter globally
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+
+    // 2. Override for JavaScript files specifically (recommended)
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    // If you use React
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+
+    // 3. Ensure the ESLint extension setting is correct
+    "eslint.format.enable": true
+}

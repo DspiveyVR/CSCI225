@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Power Bill</title>
+    <link rel="stylesheet" href="css/powerbill.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="title">
+            <h1>Georgia Power Bill Calculator</h1>
+        </div>
+        <div class="description">
+            <p>
+                The utility bill calculator is a resource that the Commission is
+                making available that allows a consumer to check the accuracy of his/her
+                monthly electric bill. A bill calculator has been prepared for customers
+                of the Georgia Power Company. This bill calcualtor applies only to residential
+                customers who are receiving service under the standard Residential Tariff
+                (R-27). for more details regarding Georgia Power's residential tariff
+                offerings, please visit Georgia Power Pricing & Rates.
+            </p>
+            <p>
+                Effective August 2023
+            </p>
+        </div>
+        <form action="">
+            <div>
+                <label for="in1">Enter your Monthly Usage in kilowatt hours (kWh): <input type="text" id="in1"></label>
+            </div>
+            <div>
+                <label for="in2">Enter the number of days for your current billing period: <input type="text"
+                        id="in2"></label>
+            </div>
+            <div>
+                <label for="in3">Is your residence INSIDE the city limits of your city? <input type="checkbox" id="in3"></label>
+            </div>
+            <div>
+                <label for="in4">Is this a Summer month (June - September)? <input type="checkbox" id="in4"></label>
+            </div>
+            <div>
+                <label for="in5">Enter Sales Tax(%): <input type="text" id="in5"></label>
+            </div>
+            <div>
+                <button id="submit" type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+    <div class="bill">
+        <div>
+            <button id="back">Go Back</button>
+        </div>
+        <div class="title">
+            <h1>Details of your bill</h1>
+        </div>
+        <div class="details">
+            <div>
+                <div>
+                    <p>Items</p>
+                </div>
+                <div>
+                    <p>Fees</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Base Charge:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Tier 1 Component (kWh):</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Tier 2 Component (kWh):</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Tier 3 Component (kWh):</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Base Revenue -- Base Bill Subtotal:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Fuel Cost Rider:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Demand Side Management residential Rider:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Nuclear Construction Cost Recovery Rider:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Environmental Complieance Cost Recovery Rider:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Total Revenue -- Current Service Subtotal:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Franchise Fee:</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>Total (excluding tax):</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <p>TOTAL (w/ tax):</p>
+                </div>
+                <div>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/powerbill.js"></script>
+</body>
+
+</html>
